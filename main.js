@@ -73,7 +73,7 @@ const menu = [
   },
   {
     id: 10,
-    title: "Hatay Usulü Döner (KATIK)",
+    title: "Hatay Usulü Döner - KATIK",
     category: "Turkey",
     price: 20,
     img: "https://scontent.fsaw2-2.fna.fbcdn.net/v/t1.18169-9/13606812_611919255656123_4844163599249256970_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=973b4a&_nc_ohc=K4iUggIUGh0AX-d7_MI&_nc_ht=scontent.fsaw2-2.fna&oh=00_AT8baGwLnWwGAoi5Id-sFG9lXKhQalrXEhracdnjAjE51w&oe=620D0582",
@@ -82,9 +82,14 @@ const menu = [
 ];
 
 const dataBase = menu;
-const btnContainer = document.querySelector("#btnContainer");
+const btnContainer = document.getElementById("btnContainer");
+/* const btnContainerclass = document.querySelector(".btnContainer"); */
 const innerItems = document.querySelector("#innerItems");
 const all = document.querySelector("#all");
+/* const collapseButton = document.querySelector("#collapseButton"); */
+
+
+
 let a = dataBase.map((item) => {
   return item.category;
 });
